@@ -1,0 +1,188 @@
+{
+  "system_name": "Next-Gen Healthcare Supportive System",
+  "description": "A web-based healthcare platform that helps patients, providers, and emergency services manage healthcare efficiently.",
+
+  "modules": [
+    {
+      "name": "Authentication",
+      "intents": [
+        {
+          "tag": "register",
+          "patterns": [
+            "How do I register?",
+            "Create account",
+            "Sign up",
+            "New user registration"
+          ],
+          "responses": [
+            "Click on Sign Up and fill in your details like name, email, and password.",
+            "You can register by providing your basic details in the registration form."
+          ]
+        },
+        {
+          "tag": "login",
+          "patterns": [
+            "How to login?",
+            "Sign in",
+            "I already have an account",
+            "Login issue"
+          ],
+          "responses": [
+            "Enter your email and password to log in.",
+            "If you forgot your password, click on 'Forgot Password'."
+          ]
+        }
+      ]
+    },
+
+    {
+      "name": "Appointments",
+      "intents": [
+        {
+          "tag": "book_appointment",
+          "patterns": [
+            "Book appointment",
+            "I need to see a doctor",
+            "Schedule consultation",
+            "Doctor booking"
+          ],
+          "responses": [
+            "Go to the Booking page, select a doctor, choose date and time, and confirm.",
+            "You can book an appointment by selecting your preferred doctor and time slot."
+          ]
+        },
+        {
+          "tag": "view_appointments",
+          "patterns": [
+            "My appointments",
+            "Show bookings",
+            "Upcoming appointments",
+            "Appointment history"
+          ],
+          "responses": [
+            "You can view all your appointments in the dashboard.",
+            "Go to 'My Appointments' to see your booking history."
+          ]
+        },
+        {
+          "tag": "cancel_appointment",
+          "patterns": [
+            "Cancel appointment",
+            "Delete booking",
+            "Reschedule appointment"
+          ],
+          "responses": [
+            "Go to your appointments and click cancel or reschedule.",
+            "You can modify your booking from the dashboard."
+          ]
+        }
+      ]
+    },
+
+    {
+      "name": "Emergency Support",
+      "intents": [
+        {
+          "tag": "emergency_help",
+          "patterns": [
+            "Emergency help",
+            "I need urgent help",
+            "Call ambulance",
+            "Emergency support"
+          ],
+          "responses": [
+            "Click the Emergency button to send an alert immediately.",
+            "Your emergency request will be sent along with your location."
+          ]
+        },
+        {
+          "tag": "nearest_hospital",
+          "patterns": [
+            "Nearby hospitals",
+            "Find hospital",
+            "Nearest clinic",
+            "Emergency hospital near me"
+          ],
+          "responses": [
+            "We will show nearby hospitals based on your location.",
+            "Check the emergency section to find nearby healthcare centers."
+          ]
+        }
+      ]
+    },
+
+    {
+      "name": "Health Information",
+      "intents": [
+        {
+          "tag": "health_tips",
+          "patterns": [
+            "Give health tips",
+            "How to stay healthy?",
+            "Fitness advice",
+            "Diet tips"
+          ],
+          "responses": [
+            "Maintain a balanced diet, exercise regularly, and stay hydrated.",
+            "Regular checkups and a healthy lifestyle are key to good health."
+          ]
+        },
+        {
+          "tag": "mental_health",
+          "patterns": [
+            "Mental health help",
+            "Stress management",
+            "Anxiety tips"
+          ],
+          "responses": [
+            "Practice mindfulness, take breaks, and seek professional help if needed.",
+            "Talking to someone and maintaining a routine can improve mental health."
+          ]
+        }
+      ]
+    },
+
+    {
+      "name": "User Profile",
+      "intents": [
+        {
+          "tag": "update_profile",
+          "patterns": [
+            "Update profile",
+            "Edit my details",
+            "Change my info"
+          ],
+          "responses": [
+            "Go to your profile section and click edit to update your details.",
+            "You can modify your personal information in the profile settings."
+          ]
+        },
+        {
+          "tag": "medical_history",
+          "patterns": [
+            "View medical history",
+            "My health records",
+            "Patient records"
+          ],
+          "responses": [
+            "Your medical history is available in your dashboard.",
+            "Check the records section to view your health data."
+          ]
+        }
+      ]
+    }
+  ],
+
+  "fallback": {
+    "patterns": [
+      "I don't understand",
+      "Unknown query",
+      "Help me"
+    ],
+    "responses": [
+      "Sorry, I didn’t understand. Can you rephrase?",
+      "Please try asking in a different way.",
+      "I'm here to help! Can you provide more details?"
+    ]
+  }
+}
